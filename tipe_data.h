@@ -6,10 +6,15 @@ using namespace std;
 
 struct info_parent1{
     string id;
+    string nama_toko;
+    string alamat;
 };
 
 struct info_child1{
     string id;
+    string nama_produk;
+    int harga;
+    int stok;
 };
 
 struct info_parent2{

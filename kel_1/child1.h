@@ -9,13 +9,6 @@ using namespace std;
 
 typedef struct elm_child1 *adr_child1;
 
-struct info_child1{
-    string id_produk;
-    string nama_produk;
-    int harga;
-    int stok;
-};
-
 struct elm_child1 {
     info_child1 info;
     adr_child1 next;
