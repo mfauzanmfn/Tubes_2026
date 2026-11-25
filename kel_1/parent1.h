@@ -9,12 +9,23 @@ using namespace std;
 
 typedef struct elm_parent1 *adr_parent1;
 
+struct info_parent1 {
+    string id_toko;
+    string nama_toko;
+    string alamat;
+};
+
 struct elm_parent1 {
     info_parent1 info;
+    List_rel1 relasi;
+    adr_parent1 next;
+    adr_parent1 prev;
     List_rel1 relasi;
 };
 
 struct List_parent1 {
+    adr_parent1 first;
+    adr_parent1 last;
 };
 
 void create_list_parent1(List_parent1 &L);

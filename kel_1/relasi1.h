@@ -10,9 +10,11 @@ typedef struct elm_rel1 *adr_rel1;
 
 struct elm_rel1 {
     adr_child1 child;
+    adr_rel1 next;
 };
 
 struct List_rel1 {
+    adr_rel1 first;
 };
 
 void create_list_rel1(List_rel1 &L);
